@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Dinesh",
+  lastName: "Karthick",
+  name: "Dinesh Karthick",
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
   email: "example@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -24,22 +24,12 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/dineshkarthickd/",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
+    link: "https://www.linkedin.com/in/dinesh-karthick-94a920295/",
   },
 ];
 
@@ -65,12 +55,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
+      I'm Dinesh Karthick, a Software Engineer at Codunt Technologies
       , where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
@@ -98,8 +83,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
+        Dinesh Karthick is a Software Engineer with a passion for transforming complex challenges
+        into simple, elegant design solutions. His work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
       </>
     ),
@@ -109,44 +94,19 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "Codunt Technologies",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Software Engineer at Codunt Technologies, specializing in building scalable web applications
+            with a focus on performance and user experience.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Spearheaded the development of a real-time collaboration tool that increased team productivity
+            by 50%.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
       },
     ],
   },
@@ -155,11 +115,11 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Madurai Kamaraj University",
+        description: <>Bachelor of Science in Computer Science</>,
       },
       {
-        name: "Build the Future",
+        name: "Mastered in .Net and Web Development,React.js",
         description: <>Studied online marketing and personal branding.</>,
       },
     ],
@@ -169,14 +129,18 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Asp.Net",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Building web applications with Asp.Net + C# + SQL Server.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "Asp.Net",
+            icon: "",
+          },
+          {
+            name: "C#",
+            icon: "",
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -196,22 +160,22 @@ const about: About = {
         ],
       },
       {
-        title: "Next.js",
+        title: "React.js",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Building next gen apps with React.js + Javascript + Sql.</>
         ),
         tags: [
           {
             name: "JavaScript",
-            icon: "javascript",
+            icon: "",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "React",
+            icon: "react",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Sql",
+            icon: "",
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -231,7 +195,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Also a Professional Photographer",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
